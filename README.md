@@ -16,7 +16,7 @@ beim Erstellung von "users":
 fertig.
 
 
-start locally as: http://localhost/vs_project.github.io/index.html
+start locally as: http://localhost/vs_project.github.io/index.html (but you shoud have the whole folder in your htcdocs)
 
 after doing registration you can click on the photo to enter SOAP (weather) or REST (smart home).
 
