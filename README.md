@@ -1,6 +1,6 @@
 # VS_Project
 
-remember you can try it out here: https://dimitrijedjukic.github.io/vs_project.github.io/
+
 
 Dimitrije's notes to you:
 wenn du es auch starten möchtest dann,
