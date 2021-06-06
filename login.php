@@ -13,7 +13,7 @@
   	<h2>Login</h2>
   </div>
 	 
-  <form method="POST" action="server.php">
+  <form method="post" action="login.php">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   		<label>Username</label>
@@ -23,7 +23,7 @@
   		<label>Password</label>
   		<input type="password" name="password">
   	</div>
-  	<div class="input-group">
+      <div class="input-group">
   		<button type="submit" class="btn" name="login_user">Login</button>
   	</div>
 	  <div class="input-group">
