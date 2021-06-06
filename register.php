@@ -3,7 +3,8 @@
 <html>
 <head>
   <title>Registration</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
   <div class="header">
@@ -33,9 +34,26 @@
   	<div class="input-group">
   	  <button type="submit" value="Submit" class="btn" name="reg_user">Register</button>
   	</div>
-  	<p>
+	  <div class="input-group">
+	  <p>
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
+	  </div>
   </form>
+
+  <footer>
+        <p>Want to see the source code, visit our <a href="https://github.com/DimitrijeDjukic/vs_project.github.io">Github</a> page 
+            <a href="https://github.com/DimitrijeDjukic/vs_project.github.io">  <i class="fa fa-github" style="font-size:24px"></i><a></a></p>
+        
+        <br>
+        <div id="names">
+            <div>Stefan Jovic</div>
+            <div>Fatlum Kurtaj</div>
+            <div>Katharina Weiss</div>
+            <div>Reinhard Winter</div>
+            <div>Dimitrije Djukic</div>
+        </div>
+    </footer>
+
 </body>
 </html>

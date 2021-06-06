@@ -20,27 +20,18 @@
     <html>
         <head>
             <title>Homepage</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
             <link rel="stylesheet" type="text/css" href="css/style.css">
         </head>
         <body>
 
           <!-- logged in user information -->
           <?php  if (isset($_SESSION['username'])) : ?>
-                <p>Welcome <strong><?php echo $_SESSION['username']; ?></strong></p>
-                <p> <a href="index.php?logout='1'" style="color: red;">Logout</a> </p>  <!-- //move to the right side  -->
-                
-                
-                
-
-            <p>Now you are ready to use our services<p>
-            <p>Please choose:</p>
-
-            <a href="soap.php"><img src="fotos/sh.png" alt="not working"></a>
-            <a href="restful.php"><img src="fotos/wetter.jpeg" alt="not working"></a>
-
-   
-            
-            <?php if (isset($_SESSION['success'])) : ?>
+            <div class="header">
+                <h1>Welcome <strong><?php echo $_SESSION['username']; ?></strong></h1>
+                <h2> <a href="index.html?logout='1'" style="color: red;">Logout</a> </h2>  <!-- //move to the right side  -->
+          </div>
+                <?php if (isset($_SESSION['success'])) : ?>
             <div class="error success" >
                 <h3>
                 <?php 
@@ -49,13 +40,41 @@
                 ?>
             <?php endif ?>
 
+                
+                
+
+
+            <br>
+           
+            <a href="soap.php"><img src="fotos/sh.png" alt="not working"></a>
+            <a href="restful.php"><img src="fotos/wetter.png" alt="not working"></a>
+
+   
+            
+           
           
-                
-                
+
+          
+            <a href="restful.php"><div class="sh">Smart Home Web Service (RESTful)</div></a>          
+            <a href="soap.php"><div class="ws">Wetter Web Service (SOAP) </div></a>
+               
                 
         <?php endif  ?>
     </div>
 		
-    <p>Stefan Jovic   Fatlum Kurtaj   Katharina Weiss   Reinhard Winter   Dimitrije Djukic</p>
+    <footer>
+        <p>Want to see the source code, visit our <a href="https://github.com/DimitrijeDjukic/vs_project.github.io">Github</a> page 
+            <a href="https://github.com/DimitrijeDjukic/vs_project.github.io">  <i class="fa fa-github" style="font-size:24px"></i><a></a></p>
+        
+        <br>
+        <div id="names">
+            <div>Stefan Jovic</div>
+            <div>Fatlum Kurtaj</div>
+            <div>Katharina Weiss</div>
+            <div>Reinhard Winter</div>
+            <div>Dimitrije Djukic</div>
+        </div>
+    </footer>
+
 </body>
 </html>

@@ -1,3 +1,110 @@
-p {
-    color:red;
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+body {
+    background-color: rgb(226, 247, 205);
+    height: 1000px;
+}
+
+.header {
+    width: 30%;
+    margin: 20px auto 10px;
+    color: white;
+    background: #74bb6e;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 5px 5px;
+    padding: 10px;
+    
+ }
+
+  .input-group {
+    margin: 10px 300px 10px 300px;
+  }
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+  }
+  .input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+
+  .btn {
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    background: #8accce;
+    border: none;
+    border-radius: 5px;
+  }
+  .error {
+    width: 92%; 
+    margin: 0px auto; 
+    padding: 10px; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+  }
+  .success {
+    color: #3c763d; 
+    background: #dff0d8; 
+    border: 1px solid #3c763d;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+
+  img {
+      margin-top: 10px;
+      margin-left: 15px;
+      height: 400px;
+      width: 600px;
+  }
+
+  img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 5px #333;
+   
+  }
+  .sh {
+      margin-left: 130px;
+      color:red;
+      float:left;
+      padding-right: 420px;
+  }
+
+  .ws {
+      float:left;
+      color:red;
+      text-decoration: none;
+      padding-bottom: 10px;
+  }
+
+  footer {
+   
+    position:fixed;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: yellow;
+    font-size: 14px;
+    border-top: 1px solid green;
+    text-align: center;
+    
+   }
+footer #names {
+    color:black;
+    display: flex;
+    justify-content: space-evenly;
 }
