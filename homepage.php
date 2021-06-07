@@ -45,18 +45,30 @@
 
 
             <br>
-           
-            <a href="soap.php"><img src="fotos/sh.png" alt="not working"></a>
-            <a href="restful.php"><img src="fotos/wetter.png" alt="not working"></a>
+            <table>
+                <tr>
+                    <td>
+                         <a href="soap.php"><img src="fotos/sh.png" alt="not working"></a>
+                    </td>
+                   
+                    <td>
+                        <a href="restful.php"><img src="fotos/wetter.png" alt="not working"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="restful.php"><div class="sh">Smart Home Web Service (RESTful)</div></a>       
+                </td>
+                    <td>
+                         <a href="soap.php"><div class="ws">Wetter Web Service (SOAP) </div></a>
+                    </td>
+                </tr>
+            </table>
 
    
-            
-           
           
-
+              
           
-            <a href="restful.php"><div class="sh">Smart Home Web Service (RESTful)</div></a>          
-            <a href="soap.php"><div class="ws">Wetter Web Service (SOAP) </div></a>
                
                 
         <?php endif  ?>

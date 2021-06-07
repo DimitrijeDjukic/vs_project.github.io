@@ -68,10 +68,10 @@ body {
   }
 
   img {
-      margin-top: 10px;
-      margin-left: 15px;
-      height: 400px;
-      width: 600px;
+      margin: 10px auto;
+      display: block;
+      width: 95%;
+      height: 300px;
   }
 
   img:hover {
@@ -79,19 +79,13 @@ body {
       box-shadow: 0 0 5px #333;
    
   }
-  .sh {
-      margin-left: 130px;
+  .sh,  .ws {
       color:red;
-      float:left;
-      padding-right: 420px;
-  }
-
-  .ws {
-      float:left;
-      color:red;
+     
+    }
+    a {
       text-decoration: none;
-      padding-bottom: 10px;
-  }
+    }
 
   footer {
    
@@ -109,4 +103,13 @@ footer #names {
     color:black;
     display: flex;
     justify-content: space-evenly;
+}
+table {
+  width:100%;
+  height: auto;
+}
+
+td{
+  width: 50%;
+  text-align: center;
 }
