@@ -10,6 +10,7 @@ package fh.vs_project.models.soap.weather;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
+import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 
@@ -24,6 +25,7 @@ import javax.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
+ *         &lt;element name="wind" type="{http://vs_project.fh/models/soap/weather}wind"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -33,9 +35,37 @@ import javax.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "")
-@XmlRootElement(name = "getCurrentWeatherRequest")
-public class GetCurrentWeatherRequest {
+@XmlType(name = "", propOrder = {
+    "wind"
+})
+@XmlRootElement(name = "getWindResponse")
+public class GetWindResponse {
 
+    @XmlElement(required = true)
+    protected Wind wind;
+
+    /**
+     * Ruft den Wert der wind-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link Wind }
+     *     
+     */
+    public Wind getWind() {
+        return wind;
+    }
+
+    /**
+     * Legt den Wert der wind-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link Wind }
+     *     
+     */
+    public void setWind(Wind value) {
+        this.wind = value;
+    }
 
 }

@@ -1,6 +1,8 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://vs_project.fh/models/soap/weather"
            targetNamespace="http://vs_project.fh/models/soap/weather" elementFormDefault="qualified">
 
+
+    <!-- Temperature-->
     <xs:element name="getCurrentWeatherRequest">
         <xs:complexType>
             <xs:sequence></xs:sequence>
@@ -8,11 +10,59 @@
     </xs:element>
 
     <xs:element name="getCurrentWeatherResponse">
-
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="weather" type="xs:float"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+
+
+    <!-- Wind-->
+    <xs:element name="getWindRequest">
+        <xs:complexType>
+            <xs:sequence></xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getWindResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="wind" type="tns:wind"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="wind">
+        <xs:sequence>
+            <xs:element name="direction" type="xs:string"/>
+            <xs:element name="velocity" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+
+
+    <!-- Forecast-->
+    <xs:element name="getForecastRequest">
+        <xs:complexType>
+            <xs:sequence></xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="getForecastRespond">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="weather" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element type="xs:double" name="temperature"/>
+                            <xs:element type="tns:wind" name="wind"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+
+
 </xs:schema>

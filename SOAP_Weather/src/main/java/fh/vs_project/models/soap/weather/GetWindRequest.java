@@ -34,8 +34,8 @@ import javax.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "")
-@XmlRootElement(name = "getCurrentWeatherRequest")
-public class GetCurrentWeatherRequest {
+@XmlRootElement(name = "getWindRequest")
+public class GetWindRequest {
 
 
 }

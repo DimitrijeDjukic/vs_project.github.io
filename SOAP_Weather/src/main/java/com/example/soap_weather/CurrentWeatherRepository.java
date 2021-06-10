@@ -11,8 +11,11 @@ public class CurrentWeatherRepository {
     @PostConstruct
     public void initData(){}
 
+    // Random Temperature
     public float getTemperature (){
         return (float) (Math.random()*40);
     }
+    public  Wind getWind(){return new Wind();}
+    public Forecast getForecast(){return new Forecast();}
 }
 

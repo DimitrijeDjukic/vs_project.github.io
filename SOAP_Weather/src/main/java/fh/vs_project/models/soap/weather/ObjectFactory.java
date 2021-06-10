@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.2 generiert 
 // Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2021.05.30 um 03:19:27 PM CEST 
+// Generiert: 2021.06.10 um 07:51:57 PM CEST 
 //
 
 
@@ -37,6 +37,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link GetForecastRespond }
+     * 
+     */
+    public GetForecastRespond createGetForecastRespond() {
+        return new GetForecastRespond();
+    }
+
+    /**
      * Create an instance of {@link GetCurrentWeatherRequest }
      * 
      */
@@ -50,6 +58,46 @@ public class ObjectFactory {
      */
     public GetCurrentWeatherResponse createGetCurrentWeatherResponse() {
         return new GetCurrentWeatherResponse();
+    }
+
+    /**
+     * Create an instance of {@link GetWindRequest }
+     * 
+     */
+    public GetWindRequest createGetWindRequest() {
+        return new GetWindRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetWindResponse }
+     * 
+     */
+    public GetWindResponse createGetWindResponse() {
+        return new GetWindResponse();
+    }
+
+    /**
+     * Create an instance of {@link Wind }
+     * 
+     */
+    public Wind createWind() {
+        return new Wind();
+    }
+
+    /**
+     * Create an instance of {@link GetForecastRequest }
+     * 
+     */
+    public GetForecastRequest createGetForecastRequest() {
+        return new GetForecastRequest();
+    }
+
+    /**
+     * Create an instance of {@link GetForecastRespond.Weather }
+     * 
+     */
+    public GetForecastRespond.Weather createGetForecastRespondWeather() {
+        return new GetForecastRespond.Weather();
     }
 
 }
