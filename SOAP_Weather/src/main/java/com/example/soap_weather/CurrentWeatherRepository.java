@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 
 @Component
 public class CurrentWeatherRepository {
-
+public int test;
     @PostConstruct
     public void initData(){}
 
@@ -17,5 +17,6 @@ public class CurrentWeatherRepository {
     }
     public  Wind getWind(){return new Wind();}
     public Forecast getForecast(){return new Forecast();}
+
 }
 
