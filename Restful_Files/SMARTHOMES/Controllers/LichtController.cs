@@ -87,7 +87,7 @@ namespace SMARTHOMES.Controllers
             //3 == Partymodus
             //4 == Anderer Modus
 
-            int a = 0;s
+            int a = 0;
 
             a = Licht.Count;
 
