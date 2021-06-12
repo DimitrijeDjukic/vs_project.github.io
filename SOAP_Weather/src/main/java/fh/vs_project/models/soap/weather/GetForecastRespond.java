@@ -2,13 +2,11 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.2 generiert 
 // Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2021.06.10 um 07:51:57 PM CEST 
+// Generiert: 2021.06.12 um 10:58:36 AM CEST 
 //
 
 
 package fh.vs_project.models.soap.weather;
-
-import com.example.soap_weather.Forecast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -85,9 +83,6 @@ public class GetForecastRespond {
             weather = new ArrayList<GetForecastRespond.Weather>();
         }
         return this.weather;
-    }
-
-    public void setForecast(Forecast forecast) {
     }
 
 
