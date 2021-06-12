@@ -10,21 +10,27 @@ namespace SMARTHOMES.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class LichtController : ControllerBase
+    public class ModusController : ControllerBase
     {
-        private static List<Licht> Licht;
+        private static List<Modus> Modus;
         private static bool init = true;
         public int zaehler = 0;
         public int zaehlerName = 0;
 
+
+
+
+
         private static readonly string[] NameOrt = new[]
         {
-            "LichtWohnzimmer", "LichtWC", "LichtKüche", "LichtSchlafzimmer"
+            "Licht1", "Licht2", "Licht3","Licht4"
         };
 
-        private readonly ILogger<LichtController> _logger;
 
-        public LichtController(ILogger<LichtController> logger)
+
+        private readonly ILogger<ModusController> _logger;
+
+        public ModusController(ILogger<ModusController> logger)
         {
             _logger = logger;
 
@@ -36,11 +42,10 @@ namespace SMARTHOMES.Controllers
             if (init)
             {
                 var rng = new Random();
-                Licht = Enumerable.Range(1, 4).Select(index => new Licht
+                Modus = Enumerable.Range(1, 4).Select(index => new Modus
 
                 {
                     // Date = DateTime.Now.AddDays(index),
-                    // TemperatureC = rng.Next(-20, 55),
                     Lichtstärke = rng.Next(0),
                     // Summary = Summaries[rng.Next(Summaries.Length)]
                     Id = zaehler++,
@@ -55,33 +60,35 @@ namespace SMARTHOMES.Controllers
         }
 
         [HttpGet]
-        public List<Licht> Get()
+        public List<Modus> Get()
         {
-            return Licht;
+            return Modus;
         }
 
         [HttpGet("{id}")]
-        public Licht Get(int id)
+        public Modus Get(int id)
         {
-            if (id >= Licht.Count)
-                return new Licht();
+            if (id >= Modus.Count)
+                return new Modus();
 
-            return Licht[id];
+            return Modus[id];
         }
 
         [HttpPost]
-        public HttpStatusCode Post(Licht L)
+        public HttpStatusCode Post(Modus M)
         {
-            Licht.Add(L);
+            Modus.Add(M);
             return HttpStatusCode.OK;
         }
+
+
+
+
 
         // PUT api/<ValuesController>/5
         [HttpPut("{id}")]
         public void Put(int id)
         {
-
-
             //1 == Lesemodus
             //2 == RomantikModus
             //3 == Partymodus
@@ -89,43 +96,23 @@ namespace SMARTHOMES.Controllers
 
             int a = 0;
 
-            a = Licht.Count;
-
-            if (id == 0)
-            {
-                for (int i = 0; i < a; i++)
-                {
-                    Licht[0].Status = true;
-                    Licht[0].Lichtstärke = 70;
-
-                    Licht[1].Status = true;
-                    Licht[1].Lichtstärke = 0;
-
-                    Licht[2].Status = false;
-                    Licht[2].Lichtstärke = 0;
-
-                    Licht[3].Status = false;
-                    Licht[3].Lichtstärke = 70;
-                }
-
-
-            }
+            a = Modus.Count;
 
             if (id == 1)
             {
                 for (int i = 0; i < a; i++)
                 {
-                    Licht[0].Status = true;
-                    Licht[0].Lichtstärke = 20;
+                    Modus[0].Status = true;
+                    Modus[0].Lichtstärke = 70;
 
-                    Licht[1].Status = true;
-                    Licht[1].Lichtstärke = 0;
+                    Modus[1].Status = true;
+                    Modus[1].Lichtstärke = 70;
 
-                    Licht[2].Status = true;
-                    Licht[2].Lichtstärke = 20;
+                    Modus[2].Status = false;
+                    Modus[2].Lichtstärke = 0;
 
-                    Licht[3].Status = true;
-                    Licht[3].Lichtstärke = 20;
+                    Modus[3].Status = false;
+                    Modus[3].Lichtstärke = 0;
                 }
 
 
@@ -135,38 +122,51 @@ namespace SMARTHOMES.Controllers
             {
                 for (int i = 0; i < a; i++)
                 {
-                    Licht[0].Status = true;
-                    Licht[0].Lichtstärke = 10;
+                    Modus[0].Status = true;
+                    Modus[0].Lichtstärke = 20;
 
-                    Licht[1].Status = true;
-                    Licht[1].Lichtstärke = 10;
+                    Modus[1].Status = true;
+                    Modus[1].Lichtstärke = 20;
 
-                    Licht[2].Status = true;
-                    Licht[2].Lichtstärke = 10;
+                    Modus[2].Status = true;
+                    Modus[2].Lichtstärke = 20;
 
-                    Licht[3].Status = true;
-                    Licht[3].Lichtstärke = 10;
+                    Modus[3].Status = true;
+                    Modus[3].Lichtstärke = 20;
                 }
+
+
             }
 
             if (id == 3)
             {
                 for (int i = 0; i < a; i++)
                 {
-                    Licht[0].Status = false;
-                    Licht[0].Lichtstärke = 0;
+                    Modus[0].Status = true;
+                    Modus[0].Lichtstärke = 10;
 
-                    Licht[1].Status = false;
-                    Licht[1].Lichtstärke = 0;
+                    Modus[1].Status = true;
+                    Modus[1].Lichtstärke = 10;
 
-                    Licht[2].Status = false;
-                    Licht[2].Lichtstärke = 0;
+                    Modus[2].Status = true;
+                    Modus[2].Lichtstärke = 10;
 
-                    Licht[3].Status = true;
-                    Licht[3].Lichtstärke = 30;
+                    Modus[3].Status = true;
+                    Modus[3].Lichtstärke = 10;
                 }
+
+
             }
 
+        }
+
+
+
+
+
+
+            /*int a = 0;
+            a = Licht.Count;
 
             if (id == 111)
             {
@@ -184,16 +184,18 @@ namespace SMARTHOMES.Controllers
                 }
 
             }
+
             else if (Licht[id].Status == true)
                 Licht[id].Status = false;
             else if (Licht[id].Status == false)
                 Licht[id].Status = true;
         }
+            */
 
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
-            Licht.RemoveAt(id);
+            Modus.RemoveAt(id);
         }
 
 
