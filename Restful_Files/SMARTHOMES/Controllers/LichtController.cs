@@ -85,7 +85,7 @@ namespace SMARTHOMES.Controllers
             //1 == Lesemodus
             //2 == RomantikModus
             //3 == Partymodus
-            //4 == Anderer Modus
+            //4 == GamingModus
 
             int a = 0;
 
