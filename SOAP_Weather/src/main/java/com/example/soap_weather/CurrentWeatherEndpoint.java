@@ -46,7 +46,6 @@ public class CurrentWeatherEndpoint {
     public GetForecastRespond getForecastData() {
         GetForecastRespond response = new GetForecastRespond();
         response.getWeather().addAll(currentWeatherRepository.getForecast().getAsWeatherList());
-        response.setForecast(currentWeatherRepository.getForecast());
         return response;
     }
 }
