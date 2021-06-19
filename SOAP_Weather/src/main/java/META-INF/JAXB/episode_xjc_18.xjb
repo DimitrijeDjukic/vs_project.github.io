@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="2.1" xmlns="http://java.sun.com/xml/ns/jaxb">
+  <!--
+
+Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.3.2 generiert 
+Siehe <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
+Generiert: 2021.06.13 um 05:47:16 PM CEST 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://vs_project.fh/models/soap/weather">
+    <schemaBindings map="false">
+      <package name="fh.vs_project.models.soap.weather"/>
+    </schemaBindings>
+    <bindings scd="tns:getForecastRespond">
+      <class ref="fh.vs_project.models.soap.weather.GetForecastRespond"/>
+    </bindings>
+    <bindings scd="tns:getCurrentWeatherRequest">
+      <class ref="fh.vs_project.models.soap.weather.GetCurrentWeatherRequest"/>
+    </bindings>
+    <bindings scd="tns:getCurrentWeatherResponse">
+      <class ref="fh.vs_project.models.soap.weather.GetCurrentWeatherResponse"/>
+    </bindings>
+    <bindings scd="tns:getWindRequest">
+      <class ref="fh.vs_project.models.soap.weather.GetWindRequest"/>
+    </bindings>
+    <bindings scd="tns:getWindResponse">
+      <class ref="fh.vs_project.models.soap.weather.GetWindResponse"/>
+    </bindings>
+    <bindings scd="~tns:wind">
+      <class ref="fh.vs_project.models.soap.weather.Wind"/>
+    </bindings>
+    <bindings scd="tns:getForecastRequest">
+      <class ref="fh.vs_project.models.soap.weather.GetForecastRequest"/>
+    </bindings>
+  </bindings>
+</bindings>
+
