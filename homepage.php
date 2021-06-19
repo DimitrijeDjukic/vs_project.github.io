@@ -48,11 +48,11 @@
             <table>
                 <tr>
                     <td>
-                         <a href="restful.php"><img src="fotos/sh.png" alt="not working"></a>
+                         <a href="restful.php"><img class="homepage" src="fotos/sh.png" alt="not working"></a>
                     </td>
                    
                     <td>
-                        <a href="soap.php"><img src="fotos/wetter.png" alt="not working"></a>
+                        <a href="soap.php"><img class="homepage" src="fotos/wetter.png" alt="not working"></a>
                     </td>
                 </tr>
                 <tr>
