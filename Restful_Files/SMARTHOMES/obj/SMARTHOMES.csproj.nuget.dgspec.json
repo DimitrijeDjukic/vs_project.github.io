@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {}
+    "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {}
   },
   "projects": {
-    "D:\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {
+    "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
+        "projectUniqueName": "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
         "projectName": "SMARTHOMES",
-        "projectPath": "D:\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
+        "projectPath": "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
         "packagesPath": "C:\\Users\\reini\\.nuget\\packages\\",
-        "outputPath": "D:\\Restful_Files\\SMARTHOMES\\obj\\",
+        "outputPath": "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
