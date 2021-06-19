@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {}
+    "D:\\SS_21\\VS\\Prjct\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {}
   },
   "projects": {
-    "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {
+    "D:\\SS_21\\VS\\Prjct\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
+        "projectUniqueName": "D:\\SS_21\\VS\\Prjct\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
         "projectName": "SMARTHOMES",
-        "projectPath": "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
-        "packagesPath": "C:\\Users\\reini\\.nuget\\packages\\",
-        "outputPath": "D:\\GitFiles\\GitHub\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\obj\\",
+        "projectPath": "D:\\SS_21\\VS\\Prjct\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\SMARTHOMES.csproj",
+        "packagesPath": "C:\\Users\\Moon\\.nuget\\packages\\",
+        "outputPath": "D:\\SS_21\\VS\\Prjct\\vs_project.github.io\\Restful_Files\\SMARTHOMES\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\reini\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Moon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -61,7 +57,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

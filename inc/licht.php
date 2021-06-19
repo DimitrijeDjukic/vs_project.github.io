@@ -14,58 +14,79 @@
         <h1>Licht</h1>
     </div>
 
-    <?php
-    $url = 'http://localhost:44320/api/Licht/0';
+     <?php
+    function file_get_contents_curl( $url ) {
 
-    $response = file_get_contents($url);
+      $ch = curl_init();
+
+      curl_setopt( $ch, CURLOPT_AUTOREFERER, TRUE );
+      curl_setopt( $ch, CURLOPT_HEADER, 0 );
+      curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+      curl_setopt( $ch, CURLOPT_URL, $url );
+      curl_setopt( $ch, CURLOPT_FOLLOWLOCATION, TRUE );
+
+      $data = curl_exec( $ch );
+      curl_close( $ch );
+
+      return $data;
+
+    }
+
+
+
+
+
+    $url = 'https://localhost:44320/api/Licht/0';
+
+    $response = file_get_contents_curl($url);
     $obj = json_decode($response);
 
     echo 'Id: ' . $obj->{'id'}; echo "<br>";
     echo 'Name: ' . $obj->{'name'}; echo "<br>";
     echo 'Status: ' . $obj->{'status'}; echo "<br>";
     
-    ?>
 
-<?php
-    $url = 'http://localhost:44320/api/Licht/1';
 
-    $response = file_get_contents($url);
+
+
+    $url = 'https://localhost:44320/api/Licht/1';
+
+    $response = file_get_contents_curl($url);
     $obj = json_decode($response);
 
     echo 'Id: ' . $obj->{'id'}; echo "<br>";
     echo 'Name: ' . $obj->{'name'}; echo "<br>";
     echo 'Status: ' . $obj->{'status'}; echo "<br>";
     
-    ?>
 
-<?php
-    $url = 'http://localhost:44320/api/Licht/2';
 
-    $response = file_get_contents($url);
+
+
+    $url = 'https://localhost:44320/api/Licht/2';
+
+    $response = file_get_contents_curl($url);
     $obj = json_decode($response);
 
     echo 'Id: ' . $obj->{'id'}; echo "<br>";
     echo 'Name: ' . $obj->{'name'}; echo "<br>";
     echo 'Status: ' . $obj->{'status'}; echo "<br>";
     
-    ?>
 
-<?php
-    $url = 'http://localhost:44320/api/Licht/3';
 
-    $response = file_get_contents($url);
+    $url = 'https://localhost:44320/api/Licht/3';
+
+    $response = file_get_contents_curl($url);
     $obj = json_decode($response);
 
     echo 'Id: ' . $obj->{'id'}; echo "<br>";
     echo 'Name: ' . $obj->{'name'}; echo "<br>";
     echo 'Status: ' . $obj->{'status'}; echo "<br>";
     
-    ?>
 
-<?php
-    $url = 'http://localhost:44320/api/Licht/4';
 
-    $response = file_get_contents($url);
+    $url = 'https://localhost:44320/api/Licht/4';
+
+    $response = file_get_contents_curl($url);
     $obj = json_decode($response);
 
     echo 'Id: ' . $obj->{'id'}; echo "<br>";
