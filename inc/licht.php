@@ -41,9 +41,9 @@
     $response = file_get_contents_curl($url);
     $obj = json_decode($response);
 
-    echo 'Id: ' . $obj->{'id'}; echo "<br>";
-    echo 'Name: ' . $obj->{'name'}; echo "<br>";
-    echo 'Status: ' . $obj->{'status'}; echo "<br>";
+    echo 'ID: ' . $obj->{'Id'}; echo "<br>";
+    echo 'Name: ' . $obj->{'Name'}; echo "<br>";
+    echo 'Status: ' . $obj->{'Status'}; echo "<br>";
     
 
 
