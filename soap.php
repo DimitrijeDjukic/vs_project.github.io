@@ -61,7 +61,7 @@ echo ' Current Weather ' . $data . ' Grad';
         <h2>Wind Data</h2>
         <?php
 
-        $url = "http://localhost:5000/ws";
+        $url = "http://soapweatherservice-env.eba-drmi76bz.us-east-2.elasticbeanstalk.com/ws";
 
         $request_param_wind = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
 				            xmlns:gs="http://vs_project.fh/models/soap/weather">

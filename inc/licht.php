@@ -38,10 +38,12 @@
 
     $url = 'https://localhost:44320/api/Licht/0';
 
-    $response = file_get_contents_curl($url);
+    $response = file_get_contents($url);
     $obj = json_decode($response);
 
-    echo 'ID: ' . $obj->{'Id'}; echo "<br>";
+    echo $response. 'test';
+
+    /*echo 'ID: ' . $obj->{'Id'}; echo "<br>";
     echo 'Name: ' . $obj->{'Name'}; echo "<br>";
     echo 'Status: ' . $obj->{'Status'}; echo "<br>";
     
@@ -91,7 +93,7 @@
 
     echo 'Id: ' . $obj->{'id'}; echo "<br>";
     echo 'Name: ' . $obj->{'name'}; echo "<br>";
-    echo 'Status: ' . $obj->{'status'}; echo "<br>";
+    echo 'Status: ' . $obj->{'status'}; echo "<br>";*/
     
     ?>
 
