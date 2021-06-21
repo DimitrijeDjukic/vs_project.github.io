@@ -15,14 +15,14 @@
     </div>
 
     <?php
-    $url = 'http://localhost:44320/api/Licht/0';
+    $url = 'https://localhost:44320/api/Licht/0';
 
     $response = file_get_contents($url);
     $obj = json_decode($response);
 
-    echo 'Id: ' . $obj->{'id'}; echo "<br>";
-    echo 'Name: ' . $obj->{'name'}; echo "<br>";
-    echo 'Status: ' . $obj->{'status'}; echo "<br>";
+    echo 'Id: ' . $obj->{'Id'}; echo "<br>";
+    echo 'Name: ' . $obj->{'Name'}; echo "<br>";
+    echo 'Status: ' . $obj->{'Status'}; echo "<br>";
     
     ?>
 
