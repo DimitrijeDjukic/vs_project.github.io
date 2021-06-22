@@ -1,0 +1,7 @@
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\SMARTHOMES.exe
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.Development.json
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\appsettings.json
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\SMARTHOMES.dll
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\SMARTHOMES.deps.json
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\SMARTHOMES.runtimeconfig.json
+D:\GitFiles\GitHub\vs_project.github.io\Restful_Files\SMARTHOMES\obj\Release\netcoreapp3.1\PubTmp\Out\SMARTHOMES.pdb
