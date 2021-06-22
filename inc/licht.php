@@ -17,7 +17,7 @@
      <?php
 
 
-    $url = 'https://localhost:44320/api/Licht/0';
+    $url = 'https://smarthomes20210621124913.azurewebsites.net/api/Licht/0';
 
     $arrContextOptions=array(
         "ssl"=>array(
@@ -38,7 +38,7 @@
 
 
 
-    $url = 'https://localhost:44320/api/Licht/1';
+    $url = 'https://smarthomes20210621124913.azurewebsites.net/api/Licht/1';
 
      $response = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $obj = json_decode($response);
@@ -51,7 +51,7 @@
 
 
 
-    $url = 'https://localhost:44320/api/Licht/2';
+    $url = 'https://smarthomes20210621124913.azurewebsites.net/api/Licht/2';
 
      $response = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $obj = json_decode($response);
@@ -62,7 +62,7 @@
     
 
 
-    $url = 'https://localhost:44320/api/Licht/3';
+    $url = 'https://smarthomes20210621124913.azurewebsites.net/api/Licht/3';
 
      $response = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $obj = json_decode($response);
@@ -73,7 +73,7 @@
     
 
 
-    $url = 'https://localhost:44320/api/Licht/4';
+    $url = 'https://smarthomes20210621124913.azurewebsites.net/api/Licht/4';
 
      $response = file_get_contents($url, false, stream_context_create($arrContextOptions));
     $obj = json_decode($response);
