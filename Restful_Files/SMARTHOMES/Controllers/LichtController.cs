@@ -91,7 +91,7 @@ namespace SMARTHOMES.Controllers
 
             a = Licht.Count;
 
-            if (id == 0)
+            if (id == 5)
             {
                 for (int i = 0; i < a; i++)
                 {
@@ -111,7 +111,7 @@ namespace SMARTHOMES.Controllers
 
             }
 
-            if (id == 1)
+            if (id == 6)
             {
                 for (int i = 0; i < a; i++)
                 {
@@ -131,7 +131,7 @@ namespace SMARTHOMES.Controllers
 
             }
 
-            if (id == 2)
+            if (id == 7)
             {
                 for (int i = 0; i < a; i++)
                 {
@@ -149,7 +149,7 @@ namespace SMARTHOMES.Controllers
                 }
             }
 
-            if (id == 3)
+            if (id == 8)
             {
                 for (int i = 0; i < a; i++)
                 {
@@ -184,10 +184,45 @@ namespace SMARTHOMES.Controllers
                 }
 
             }
-            else if (Licht[id].Status == true)
-                Licht[id].Status = false;
-            else if (Licht[id].Status == false)
-                Licht[id].Status = true;
+            else if (id == 0)
+            {
+                if (Licht[id].Status == true)
+                    Licht[id].Status = false;
+
+                else if (Licht[id].Status == false)
+                    Licht[id].Status = true;
+
+            }
+            else if (id == 1)
+            {
+                if (Licht[id].Status == true)
+                    Licht[id].Status = false;
+
+                else if (Licht[id].Status == false)
+                    Licht[id].Status = true;
+
+            }
+            else if (id == 2)
+            {
+                if (Licht[id].Status == true)
+                    Licht[id].Status = false;
+
+                else if (Licht[id].Status == false)
+                    Licht[id].Status = true;
+
+            }
+            else if (id == 3)
+            {
+                if (Licht[id].Status == true)
+                    Licht[id].Status = false;
+
+                else if (Licht[id].Status == false)
+                    Licht[id].Status = true;
+
+            }
+
+
+
         }
 
         [HttpDelete("{id}")]
@@ -198,4 +233,4 @@ namespace SMARTHOMES.Controllers
 
 
     }
-}
+}  
